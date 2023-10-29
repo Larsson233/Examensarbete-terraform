@@ -17,7 +17,7 @@ provider "aws" {
 #   sudo systemctl start docker
 #   sudo systemctl enable docker
 #   sudo usermod -aG docker ec2-user
-#   echo eyJwYXlsb2FkIjoiRzYwRFBiZjFhTklhdmJ3bnc4VkU1ZEFMczVPd0VEZkNzMmo2bEJpVGl6SGlLanI4MHVvcTZ3VXlDN2x3dUZiT1FDVlQ0L3BZSUt1QnlwUWtFTWVWZ1IwbDZrblZvTm4zMDFONGtpVVdHdUNjOEFIdCtlSnorRGUyR2crTldWUDZpVzZqUHYxZXJEbE8xVW9xVnJqRVpxaEo5eDVqQ25IK3dhVVVCOHlmTGdYem9OUUkyQi9KaVM0SG16ZE9qWGhYbjFzU0kvd0t0dzN5Mm51VmlUT0RzVVAxbmNHZHhsUXB4OGphcElhSjh6TXlNbTArb3VLUGJpSGp2WEhCOTdDTTkzRWpKQWFzWk1kVEVwa0hnaUtrK0g1Q1FHNElYSHBQVExHYXVuSC8vOXc3NlNyZlhpSW9Waml0cHRhU3oyOWplZGxFNjdWVUtSbVlZWW5iSjQ1NlZtMWhtUHREcko3OC9hbXltUDlCK2Q1dEx1WEZKeWVvOU1DRGNEUHpnY1R6cmRlVXZsRnlIZTd5K1ZZdnZ6N2lQbk5WK1NtZ0FrbUMrbUxaVWVYcGk3RmlLSE82TldhOGhkUmdqNWkrRFhocndqR0hHekg1MExvZStzMVNPL1U3VEViSUYxQmFkN0JQZGZjTHdmb2pxN1NPME1pajBTQnozb2NwZm90K0VhcXQ4b08zYXlKRndTK2VwR25uNGNuSlptRTRJdE5IUXM3SmIya2RJanByZEM2NW90NTJjaEtiQ2N5VklPOXJMRXh4cllJVC9EUGlmQlVQQnczYXJMdWdMV1BDUXVObW5DSTFiYkVUZ2d6cllDQmRUSllaN3NxTkFaMVN4RHkvNWRhejlMcWcwMmtZRzk1Qi9wUnBNd2wrQlFjZ2NxQjZwakJub1pNVXk1QzUrQURtLzlLSWJUeTZib3pTQ0NmR3JzWG9ER3BTMmhSb1FRNFVwdFNvb0NJMGtPYmRtbEdNdGFwL29hcjhYc1lFN1U2ZWplOVVkTVRRNnB4NXNFbFF0YS9FZmQrR1RnTHFTUnd3N2xBbi9oTnpDRzBsanI5dE1qblliN2pIaWxHZ3BMUGsrRlBrY29OU2N4bWxmOUJRdkdaVUlFcDVTVzZsZjkrdFdFZXNPS2xuS2VpSWxhK1JHUHJiTzRhdkVqN05HTUxVNmxmZnpmNGhod3JuQThSZUZObHpnMzhDUHRnSWZOMUxjY1dyQmZwWW0zNXhXNmxKcno4R2l2Tjk4YXlEaGRJMk01MGhHR1lPT2I5dmYxaUdST1QzOUhnSm1BL0FTeml6MTZURnlUcXRWcGFla1hkOXhBbzJuZmV5QUpnRU5RS3giLCJkYXRha2V5IjoiQVFJQkFIaGZyRlEyYUlJd0Y1VmM3OVJIRVBHbmNVV3VyMi9Kek04dC9aem9FdFJyQWdGcDlLblpzTHVualZyQWhvckFzcmF5QUFBQWZqQjhCZ2txaGtpRzl3MEJCd2FnYnpCdEFnRUFNR2dHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNSkN4VVgrY3BDRXhuNWpwY0FnRVFnRHZVa2tuZCtTMXZmOFQ3T3VxSHhPcWdNM3E2VmtVeTA2b29XM0hSdWtLbGlSQi91dkdRSUMxWCtxcXZ2a0cycWZsYkl1OTd1bDdpZmFCeUJBPT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE2OTgyODA4NTF9 | docker login -u AWS --password-stdin 338315907544.dkr.ecr.eu-north-1.amazonaws.com
+#   echo eyJwYXlsb2FkIjoiR0dHNldmWU1qS3ZZRGxlNXE3QWFtc0w4V1VPNkFNNjdlWS8wcDRHajN5ZU9CVVZzK0tQVncxL3FzdGhnRW1Oa0Y4R2Q1RmxVSGVIK0FOM0crVlhvdWNCQW9iaC8veDJZTHlBeFpMb2Q3SlVhbzFpb3JYbVFxcy91eXIxTm8wcXVFMmJ2VDEyUkMycEM2emZ6T0lEWksvS3Y5cVhRYTRqWWxLMHhveWptV3FvdlBnMGFEcmI3LzJWUlg5UEpzOWIyNEYvMUphYXlqWTN3R21PclF6Y05rcU5NYWRVSkFrbG8yYWNDNlN6a3VUc0tsV3JmcVlsbSs0eGpBN1BFQTYyNzVKQjdEYU9kZTR3Znc1emVMNzUrT3h6eCtDVi9paHdQZXBETjVEajQ3NEhhRTFwN1hKdHlzSjBxOEJjN2pseDlLcG5YUjIvWm1qSStmck5VbnV5L0xlcDRsTGJjOXAyL2xvaFBuQ0hWSC84Y0EybG1vS3IvdXExRC9wUjhadW9nRmFVT0JUWTBTRlhNSE1jMmRvdVEwL3ZOQnNNSFg1dTExeHhERHhZTGprS3lyUGI3dVltZTBHUEwycGgxOFU1a1JyMUVRZGtGWU10Wmx0TjlKUnlaZHBQS042WUhNUkxUYWw5ZVpCWTZvSVJra0k4aUpvcmkxeDNPU09uSVY0M3g0Y3RFVFcyQXFzaGUySE5xblB1dUNvbmtnK0lhWUlyV2tTTEY2MEM1QlgyVHNlbm0wMUVmSWVOZVRwUkM1bUFud1dadGxCUW1RZXBKanJ6QUpsTERnaW1iaWVhMTc5NUFBdVRFYXM3T1lCVHY1RUhvZHEyenVtMmlnS2RnOUUrS3prdCtnakJRdHlSSVdlS3lXWDJCZkxjaGVLODh0Y2ZhN0R4WkZBMXZUNklzVWpIaE9xbnA5SFc2Q1ZOUUdPeWgyZzUyMFlhNjROcUVocFQwZmtFRVhsbTBuWjZmQ3M2SEZ5R0NER3cvVTNES2VObW5BOTQzbHJaU0wvN0plNjh5YTdZYTgyd1VUYTR1QkdsWlZBK0djYmFRU2hhR05rOVRKQ0xsOVRnUy9HUWZFR010TlppcUlBdFliVTJQSUROelZia3NhWlJhbzh6WG5TbDRwcUtpMjVJdmdpdDN0Y0xlWmJMVzZJK3FxTmEwM3B4ei9qRGpLQ1U4cXE3ckFOWWRQcWdzZGJkUFVCcG5LR1RORDR0NDkzaGI0R21JWHcxY0l4dFFOdFlNeCsxZFM0ayt0VkRzSVhGd25NZ2xNV2FKc01nMVJLZWk1TktzWmx3OGVTeGhDVzMzaGpYWHFKcXlhSXpPN3luRWFnNWdOdzlPVjNXMUphbFRuL2o2VXJRc1oxQWdmSlQvNjFiQVY1VEJFSlNvaC9KMUYxRkIzUlp0ZlE9PSIsImRhdGFrZXkiOiJBUUVCQUhoK2RTK0JsTnUwTnhuWHdvd2JJTHMxMTV5amQrTE5BWmhCTFpzdW5PeGszQUFBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVESWFiTzZxalJUdVE4a2UrYmdJQkVJQTdsaWladVBpZUY0YjJURVBoUTZ5VWpSdkNKSms1Vm9Ma0loZER0WDVpT01iK0xZT0NCWkQrelVlUDZETU1xUSs5SzJlNHVCTUdXV0pMaWZzPSIsInZlcnNpb24iOiIyIiwidHlwZSI6IkRBVEFfS0VZIiwiZXhwaXJhdGlvbiI6MTY5ODY1MjEyN30= | docker login -u AWS --password-stdin 338315907544.dkr.ecr.eu-north-1.amazonaws.com
 #   docker pull 338315907544.dkr.ecr.eu-north-1.amazonaws.com/examensarbete:latest
 #   docker run -d -p 80:80 338315907544.dkr.ecr.eu-north-1.amazonaws.com/examensarbete:latest
 #   EOF
@@ -25,23 +25,30 @@ provider "aws" {
 
 resource "aws_launch_template" "example" {
 
-  name                 = "ogges-launch-template"
-  description          = "Example Launch Template for Auto Scaling Group"
-  image_id             = "ami-0550c2ee59485be53"
-  instance_type        = "t3.micro"
-  key_name             = "AwsKey"
-  security_group_names = ["security-group-ogge"]
-  user_data            = base64encode(<<-EOF
+  name          = "ogges-launch-template"
+  description   = "Example Launch Template for Auto Scaling Group"
+  image_id      = "ami-0550c2ee59485be53"
+  instance_type = "t3.micro"
+  key_name      = "AwsKey"
+
+  iam_instance_profile {
+    name = "NoCredentials" # Replace with your IAM role name or ARN
+  }
+  network_interfaces {
+    device_index    = 0
+    subnet_id       = "subnet-038809d3d73720fb5"
+    security_groups = [aws_security_group.example.id]
+  }
+  user_data = base64encode(<<-EOF
   #!/bin/bash
   sudo yum update -y
-  sudo amazon-linux-extras enable docker
   sudo yum install -y docker
   sudo systemctl start docker
   sudo systemctl enable docker
   sudo usermod -aG docker ec2-user
-  echo eyJwYXlsb2FkIjoiRzYwRFBiZjFhTklhdmJ3bnc4VkU1ZEFMczVPd0VEZkNzMmo2bEJpVGl6SGlLanI4MHVvcTZ3VXlDN2x3dUZiT1FDVlQ0L3BZSUt1QnlwUWtFTWVWZ1IwbDZrblZvTm4zMDFONGtpVVdHdUNjOEFIdCtlSnorRGUyR2crTldWUDZpVzZqUHYxZXJEbE8xVW9xVnJqRVpxaEo5eDVqQ25IK3dhVVVCOHlmTGdYem9OUUkyQi9KaVM0SG16ZE9qWGhYbjFzU0kvd0t0dzN5Mm51VmlUT0RzVVAxbmNHZHhsUXB4OGphcElhSjh6TXlNbTArb3VLUGJpSGp2WEhCOTdDTTkzRWpKQWFzWk1kVEVwa0hnaUtrK0g1Q1FHNElYSHBQVExHYXVuSC8vOXc3NlNyZlhpSW9Waml0cHRhU3oyOWplZGxFNjdWVUtSbVlZWW5iSjQ1NlZtMWhtUHREcko3OC9hbXltUDlCK2Q1dEx1WEZKeWVvOU1DRGNEUHpnY1R6cmRlVXZsRnlIZTd5K1ZZdnZ6N2lQbk5WK1NtZ0FrbUMrbUxaVWVYcGk3RmlLSE82TldhOGhkUmdqNWkrRFhocndqR0hHekg1MExvZStzMVNPL1U3VEViSUYxQmFkN0JQZGZjTHdmb2pxN1NPME1pajBTQnozb2NwZm90K0VhcXQ4b08zYXlKRndTK2VwR25uNGNuSlptRTRJdE5IUXM3SmIya2RJanByZEM2NW90NTJjaEtiQ2N5VklPOXJMRXh4cllJVC9EUGlmQlVQQnczYXJMdWdMV1BDUXVObW5DSTFiYkVUZ2d6cllDQmRUSllaN3NxTkFaMVN4RHkvNWRhejlMcWcwMmtZRzk1Qi9wUnBNd2wrQlFjZ2NxQjZwakJub1pNVXk1QzUrQURtLzlLSWJUeTZib3pTQ0NmR3JzWG9ER3BTMmhSb1FRNFVwdFNvb0NJMGtPYmRtbEdNdGFwL29hcjhYc1lFN1U2ZWplOVVkTVRRNnB4NXNFbFF0YS9FZmQrR1RnTHFTUnd3N2xBbi9oTnpDRzBsanI5dE1qblliN2pIaWxHZ3BMUGsrRlBrY29OU2N4bWxmOUJRdkdaVUlFcDVTVzZsZjkrdFdFZXNPS2xuS2VpSWxhK1JHUHJiTzRhdkVqN05HTUxVNmxmZnpmNGhod3JuQThSZUZObHpnMzhDUHRnSWZOMUxjY1dyQmZwWW0zNXhXNmxKcno4R2l2Tjk4YXlEaGRJMk01MGhHR1lPT2I5dmYxaUdST1QzOUhnSm1BL0FTeml6MTZURnlUcXRWcGFla1hkOXhBbzJuZmV5QUpnRU5RS3giLCJkYXRha2V5IjoiQVFJQkFIaGZyRlEyYUlJd0Y1VmM3OVJIRVBHbmNVV3VyMi9Kek04dC9aem9FdFJyQWdGcDlLblpzTHVualZyQWhvckFzcmF5QUFBQWZqQjhCZ2txaGtpRzl3MEJCd2FnYnpCdEFnRUFNR2dHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNSkN4VVgrY3BDRXhuNWpwY0FnRVFnRHZVa2tuZCtTMXZmOFQ3T3VxSHhPcWdNM3E2VmtVeTA2b29XM0hSdWtLbGlSQi91dkdRSUMxWCtxcXZ2a0cycWZsYkl1OTd1bDdpZmFCeUJBPT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE2OTgyODA4NTF9 | docker login -u AWS --password-stdin 338315907544.dkr.ecr.eu-north-1.amazonaws.com
-  docker pull 338315907544.dkr.ecr.eu-north-1.amazonaws.com/examensarbete:latest
-  docker run -d -p 80:80 338315907544.dkr.ecr.eu-north-1.amazonaws.com/examensarbete:latest
+  sudo aws ecr get-login-password --region eu-north-1 | sudo docker login --username AWS --password-stdin 338315907544.dkr.ecr.eu-north-1.amazonaws.com
+  sudo docker pull 338315907544.dkr.ecr.eu-north-1.amazonaws.com/examensarbete:latest
+  sudo docker run -d -p 80:80 338315907544.dkr.ecr.eu-north-1.amazonaws.com/examensarbete:latest
   EOF
   )
 
@@ -72,3 +79,56 @@ resource "aws_security_group" "example" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+# Define the target group
+resource "aws_lb_target_group" "example" {
+  name     = "ogges-target-group"
+  port     = 80
+  protocol = "HTTP"
+  vpc_id   = "vpc-0fc88ebe86ed9b792"
+}
+
+# Create the Application Load Balancer (ALB)
+resource "aws_lb" "example" {
+  name               = "example-alb"
+  internal           = false
+  load_balancer_type = "application"
+  subnets            = ["subnet-038809d3d73720fb5", "subnet-0b5058e004fd8e2bb", "subnet-06b09862b947ee15c"] # Specify your subnets
+
+  enable_deletion_protection = false
+
+  security_groups = [aws_security_group.example.id]
+
+  enable_http2 = true
+}
+
+# Attach the target group to the ALB
+resource "aws_lb_listener" "example" {
+  load_balancer_arn = aws_lb.example.arn
+  port              = 80
+  protocol          = "HTTP"
+
+  default_action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.example.arn
+  }
+}
+
+
+resource "aws_autoscaling_group" "example" {
+  name              = "ogges-auto-scaling-group"
+  target_group_arns = [aws_lb_target_group.example.arn]
+  launch_template {
+    id      = aws_launch_template.example.id
+    version = "$Latest"
+  }
+  vpc_zone_identifier = ["subnet-038809d3d73720fb5", "subnet-0b5058e004fd8e2bb", "subnet-06b09862b947ee15c"] # Specify your subnet IDs here
+  min_size            = 1
+  max_size            = 3
+  desired_capacity    = 2
+}
+
+#
+# sudo aws ecr get-login-password --region eu-north-1 | sudo docker login --username AWS --password-stdin 338315907544.dkr.ecr.eu-north-1.amazonaws.com
+#
+#
