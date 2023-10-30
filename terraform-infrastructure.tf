@@ -128,7 +128,87 @@ resource "aws_autoscaling_group" "example" {
   desired_capacity    = 2
 }
 
-#
+
+
+
+resource "aws_codebuild_project" "example" {
+  name          = "my-build"
+  build_timeout = 5
+  service_role  = "arn:aws:iam::338315907544:role/oggeaccess"
+
+  source {
+    type      = "CODECOMMIT"
+    location  = "https://git-codecommit.eu-north-1.amazonaws.com/v1/repos/ExamensarbeteCC"
+    buildspec = "buildspec.yml"
+  }
+
+  environment {
+    compute_type = "BUILD_GENERAL1_SMALL"
+    type         = "LINUX_CONTAINER"
+    image        = "aws/codebuild/amazonlinux2-x86_64-standard:5.0"
+    privileged_mode = true
+  }
+
+  artifacts {
+    type = "NO_ARTIFACTS"
+  }
+}
+
+data "aws_codecommit_repository" "example" {
+  repository_name = "ExamensarbeteCC"
+
+}
+
+resource "aws_codepipeline" "example" {
+  name     = "my-pipeline"
+  role_arn = "arn:aws:iam::338315907544:role/oggeaccesspipeline"
+
+  artifact_store {
+    location = aws_s3_bucket.example.bucket
+    type     = "S3"
+  }
+
+  stage {
+    name = "Source"
+
+    action {
+      name             = "SourceAction"
+      category         = "Source"
+      owner            = "AWS"
+      provider         = "CodeCommit"
+      version          = "1"
+      output_artifacts = ["SourceArtifact"]
+
+      configuration = {
+        RepositoryName = "ExamensarbeteCC" # Replace with your CodeCommit repository name
+        BranchName     = "main"
+      }
+    }
+  }
+
+  stage {
+    name = "Build"
+
+    action {
+      name             = "BuildAction"
+      category         = "Build"
+      owner            = "AWS"
+      provider         = "CodeBuild"
+      input_artifacts  = ["SourceArtifact"]
+      output_artifacts = ["BuildArtifact"]
+      version          = "1"
+
+      configuration = {
+        ProjectName = aws_codebuild_project.example.name
+      }
+    }
+  }
+}
+
+resource "aws_s3_bucket" "example" {
+  bucket = "ogges-unika-hink-bucket"
+}
+
 # sudo aws ecr get-login-password --region eu-north-1 | sudo docker login --username AWS --password-stdin 338315907544.dkr.ecr.eu-north-1.amazonaws.com
 #
 #
