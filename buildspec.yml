@@ -1,0 +1,22 @@
+version: 0.2
+phases:
+
+  pre_build:
+    commands:
+      - REGISTRY=338315907544.dkr.ecr.eu-north-1.amazonaws.com
+      - CONTAINER=oggescontainer
+      - IMAGE=$REGISTRY/examensarbete
+      - COMMIT=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-8)
+      - aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin $REGISTRY
+  build:
+    commands:
+      - docker build --tag $IMAGE .
+      - docker tag $IMAGE $IMAGE:$COMMIT
+  post_build:
+    commands:
+      - docker push $IMAGE:$COMMIT
+      - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER $IMAGE:$COMMIT > imagedefinitions.json
+      - aws s3 cp imagedefinitions.json s3://ogges-unika-s3-hink-king/
+artifacts:
+  files:
+    - imagedefinitions.json
